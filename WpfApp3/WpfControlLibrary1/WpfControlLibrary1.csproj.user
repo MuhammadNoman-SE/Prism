@@ -5,12 +5,18 @@
     <Compile Update="Controls\ControlA.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\TabView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\ViewA.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Controls\ControlA.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\TabView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\ViewA.xaml">

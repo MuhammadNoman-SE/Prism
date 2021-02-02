@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 
-2-203365024
+3-1458469485
 
-61880251964
+8-1153342620
 195250630472
-Controls\ControlA.xaml;Views\ViewA.xaml;
+Controls\ControlA.xaml;Views\TabView.xaml;Views\ViewA.xaml;
 
 False
 

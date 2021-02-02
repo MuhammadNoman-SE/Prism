@@ -28,3 +28,5 @@ E:\Prism-\WpfApp3\WpfControlLibrary1\obj\Debug\netcoreapp3.1\WpfControlLibrary1.
 E:\Prism-\WpfApp3\WpfControlLibrary1\obj\Debug\netcoreapp3.1\WpfControlLibrary1.csproj.CoreCompileInputs.cache
 E:\Prism-\WpfApp3\WpfControlLibrary1\obj\Debug\netcoreapp3.1\WpfControlLibrary1.dll
 E:\Prism-\WpfApp3\WpfControlLibrary1\obj\Debug\netcoreapp3.1\WpfControlLibrary1.pdb
+E:\Prism-\WpfApp3\WpfControlLibrary1\obj\Debug\netcoreapp3.1\Views\TabView.baml
+E:\Prism-\WpfApp3\WpfControlLibrary1\obj\Debug\netcoreapp3.1\Views\TabView.g.cs

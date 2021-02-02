@@ -27,11 +27,16 @@ namespace WpfApp3
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
         }
-        protected override void ConfigureRegionAdapterMappings(RegionAdapterMappings regionAdapterMappings)
+
+        protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         {
-            base.ConfigureRegionAdapterMappings(regionAdapterMappings);
-            regionAdapterMappings.RegisterMapping(typeof(StackPanel),Container.Resolve<StackPanelRegionAdapter>());
+            moduleCatalog.AddModule<WpfControlLibrary1.Class1>();
         }
+        //protected override void ConfigureRegionAdapterMappings(RegionAdapterMappings regionAdapterMappings)
+        //{
+        //    base.ConfigureRegionAdapterMappings(regionAdapterMappings);
+        //    regionAdapterMappings.RegisterMapping(typeof(StackPanel),Container.Resolve<StackPanelRegionAdapter>());
+        //}
 
         //protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         //{
@@ -39,11 +44,11 @@ namespace WpfApp3
         //    moduleCatalog.AddModule<Class1>();
         //}
 
-        protected override IModuleCatalog CreateModuleCatalog() 
-        {
-            return new ConfigurationModuleCatalog();
-           // return new DirectoryModuleCatalog() { ModulePath= "./Modules" };
-        }
+        //protected override IModuleCatalog CreateModuleCatalog() 
+        //{
+        //    return new ConfigurationModuleCatalog();
+        //   // return new DirectoryModuleCatalog() { ModulePath= "./Modules" };
+        //}
 
         //protected override void ConfigureViewModelLocator()
         //{
@@ -54,6 +59,6 @@ namespace WpfApp3
         //    });
         //}
 
-        
+
     }
 }
