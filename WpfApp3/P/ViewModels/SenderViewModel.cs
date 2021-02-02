@@ -26,7 +26,7 @@ namespace P.ViewModels
         public string M
         {
             get { return m; }
-            set { m = value; }
+            set {SetProperty(ref m , value); }
         }
 
         public SenderViewModel(IEventAggregator e)

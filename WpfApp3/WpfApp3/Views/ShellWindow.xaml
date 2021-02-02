@@ -30,11 +30,11 @@
     </Grid-->
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
+            <ColumnDefinition />
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <ContentControl prism:RegionManager.RegionName="P"/>
-        <ContentControl prism:RegionManager.RegionName="S"/>
+        <ContentControl Grid.Column="1" prism:RegionManager.RegionName="S"/>
 
     </Grid>
 </Window>

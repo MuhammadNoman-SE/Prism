@@ -2,12 +2,12 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="Views\Sender.xaml.cs">
+    <Compile Update="ViewModels\Sender.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Views\Sender.xaml">
+    <Page Update="ViewModels\Sender.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

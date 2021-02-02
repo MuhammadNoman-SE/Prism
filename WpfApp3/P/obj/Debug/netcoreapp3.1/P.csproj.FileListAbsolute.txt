@@ -2,8 +2,6 @@ E:\Prism-\WpfApp3\P\obj\Debug\netcoreapp3.1\P_MarkupCompile.cache
 E:\Prism-\WpfApp3\P\bin\Debug\netcoreapp3.1\P.deps.json
 E:\Prism-\WpfApp3\P\bin\Debug\netcoreapp3.1\P.dll
 E:\Prism-\WpfApp3\P\bin\Debug\netcoreapp3.1\P.pdb
-E:\Prism-\WpfApp3\P\obj\Debug\netcoreapp3.1\Views\Sender.baml
-E:\Prism-\WpfApp3\P\obj\Debug\netcoreapp3.1\Views\Sender.g.cs
 E:\Prism-\WpfApp3\P\obj\Debug\netcoreapp3.1\P.g.resources
 E:\Prism-\WpfApp3\P\obj\Debug\netcoreapp3.1\P.AssemblyInfoInputs.cache
 E:\Prism-\WpfApp3\P\obj\Debug\netcoreapp3.1\P.AssemblyInfo.cs
@@ -14,3 +12,5 @@ E:\Prism-\WpfApp3\P\obj\Debug\netcoreapp3.1\P.csprojAssemblyReference.cache
 E:\Prism-\WpfApp3\P\bin\Debug\netcoreapp3.1\Core.dll
 E:\Prism-\WpfApp3\P\bin\Debug\netcoreapp3.1\Core.pdb
 E:\Prism-\WpfApp3\P\obj\Debug\netcoreapp3.1\P.csproj.CopyComplete
+E:\Prism-\WpfApp3\P\obj\Debug\netcoreapp3.1\ViewModels\Sender.baml
+E:\Prism-\WpfApp3\P\obj\Debug\netcoreapp3.1\ViewModels\Sender.g.cs

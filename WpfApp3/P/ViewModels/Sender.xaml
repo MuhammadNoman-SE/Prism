@@ -4,8 +4,8 @@
              xmlns:prism="http://prismlibrary.com/"             
              prism:ViewModelLocator.AutoWireViewModel="True">
     <StackPanel>
-        <TextBox Text="{Binding T}"/>
-        <Button Command="{Binding Send}">Send
+        <TextBox Text="{Binding M}"/>
+        <Button Command="{Binding S}">Send
         </Button>
     </StackPanel>
 </UserControl>

@@ -46,8 +46,13 @@ namespace WpfControlLibrary1
 
             //rg.Activate(v3);
 
+            //var s = containerProvider.Resolve<ShellWindow>();
+            //var rr = containerProvider.Resolve<Receiver>();
+
+            //r.AddToRegion("P",s );
+            //r.AddToRegion("S", rr);
             r.RegisterViewWithRegion("P", typeof(Sender));
-            r.RegisterViewWithRegion("L", typeof(Receiver));
+            r.RegisterViewWithRegion("S", typeof(Receiver));
 
         }
 
