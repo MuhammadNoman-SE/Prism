@@ -1,0 +1,16 @@
+E:\Prism-\WpfApp3\L\bin\Debug\netcoreapp3.1\L.deps.json
+E:\Prism-\WpfApp3\L\bin\Debug\netcoreapp3.1\L.dll
+E:\Prism-\WpfApp3\L\bin\Debug\netcoreapp3.1\L.pdb
+E:\Prism-\WpfApp3\L\obj\Debug\netcoreapp3.1\L.AssemblyInfoInputs.cache
+E:\Prism-\WpfApp3\L\obj\Debug\netcoreapp3.1\L.AssemblyInfo.cs
+E:\Prism-\WpfApp3\L\obj\Debug\netcoreapp3.1\L.csproj.CoreCompileInputs.cache
+E:\Prism-\WpfApp3\L\obj\Debug\netcoreapp3.1\L.dll
+E:\Prism-\WpfApp3\L\obj\Debug\netcoreapp3.1\L.pdb
+E:\Prism-\WpfApp3\L\obj\Debug\netcoreapp3.1\Views\Receiver.baml
+E:\Prism-\WpfApp3\L\obj\Debug\netcoreapp3.1\Views\Receiver.g.cs
+E:\Prism-\WpfApp3\L\obj\Debug\netcoreapp3.1\L_MarkupCompile.cache
+E:\Prism-\WpfApp3\L\obj\Debug\netcoreapp3.1\L.g.resources
+E:\Prism-\WpfApp3\L\bin\Debug\netcoreapp3.1\Core.dll
+E:\Prism-\WpfApp3\L\bin\Debug\netcoreapp3.1\Core.pdb
+E:\Prism-\WpfApp3\L\obj\Debug\netcoreapp3.1\L.csprojAssemblyReference.cache
+E:\Prism-\WpfApp3\L\obj\Debug\netcoreapp3.1\L.csproj.CopyComplete

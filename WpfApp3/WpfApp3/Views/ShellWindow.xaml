@@ -13,7 +13,7 @@
         </Style>
     </Window.Resources>
 
-    <Grid>
+    <!--Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*" />
@@ -22,10 +22,19 @@
         <Button Content="Save All" Margin="10" Command="{Binding  AC.SaveAllCommand}"/>
 
         <TabControl Grid.Row="1" Margin="10" prism:RegionManager.RegionName="ContentRegion" />
-    </Grid>
+    </Grid-->
     <!--Grid>
         <ContentControl prism:RegionManager.RegionName="ContentRegion"/-->
         <!--StackPanel prism:RegionManager.RegionName="ContentRegion">
         </StackPanel>
     </Grid-->
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ContentControl prism:RegionManager.RegionName="P"/>
+        <ContentControl prism:RegionManager.RegionName="S"/>
+
+    </Grid>
 </Window>

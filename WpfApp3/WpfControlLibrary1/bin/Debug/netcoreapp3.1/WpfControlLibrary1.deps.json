@@ -9,6 +9,8 @@
       "WpfControlLibrary1/1.0.0": {
         "dependencies": {
           "Core": "1.0.0",
+          "L": "1.0.0",
+          "P": "1.0.0",
           "Prism.Wpf": "8.0.0.1909"
         },
         "runtime": {
@@ -50,6 +52,24 @@
         "runtime": {
           "Core.dll": {}
         }
+      },
+      "L/1.0.0": {
+        "dependencies": {
+          "Core": "1.0.0",
+          "Prism.Wpf": "8.0.0.1909"
+        },
+        "runtime": {
+          "L.dll": {}
+        }
+      },
+      "P/1.0.0": {
+        "dependencies": {
+          "Core": "1.0.0",
+          "Prism.Wpf": "8.0.0.1909"
+        },
+        "runtime": {
+          "P.dll": {}
+        }
       }
     }
   },
@@ -81,6 +101,16 @@
       "hashPath": "prism.wpf.8.0.0.1909.nupkg.sha512"
     },
     "Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "L/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "P/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

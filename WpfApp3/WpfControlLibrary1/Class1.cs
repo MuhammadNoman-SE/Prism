@@ -1,4 +1,6 @@
-﻿using Prism.Ioc;
+﻿using L.Views;
+using P.Views;
+using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Mvvm;
 using Prism.Regions;
@@ -22,27 +24,31 @@ namespace WpfControlLibrary1
         public void OnInitialized(IContainerProvider containerProvider)
         {
             //r.RegisterViewWithRegion("ContentRegion", typeof(ViewA));
-            IRegion rg = r.Regions["ContentRegion"];
+            //IRegion rg = r.Regions["ContentRegion"];
             //var v1 = containerProvider.Resolve<ViewA>();
             //var v2 = containerProvider.Resolve<ControlA>();
             //v2.Content = new TextBlock { Text="V2"};
-            var tabA = containerProvider.Resolve<TabView>();
-            SetTitle(tabA, "Tab A");
-            rg.Add(tabA);
+            //var tabA = containerProvider.Resolve<TabView>();
+            //SetTitle(tabA, "Tab A");
+            //rg.Add(tabA);
 
-            var tabB = containerProvider.Resolve<TabView>();
-            SetTitle(tabB, "Tab B");
-            rg.Add(tabB);
+            //var tabB = containerProvider.Resolve<TabView>();
+            //SetTitle(tabB, "Tab B");
+            //rg.Add(tabB);
 
-            var tabC = containerProvider.Resolve<TabView>();
-            SetTitle(tabC, "Tab C");
-            rg.Add(tabC);
+            //var tabC = containerProvider.Resolve<TabView>();
+            //SetTitle(tabC, "Tab C");
+            //rg.Add(tabC);
 
             //rg.Add(v1);
             //rg.Add(v2);
             //rg.Add(v3);
 
             //rg.Activate(v3);
+
+            r.RegisterViewWithRegion("P", typeof(Sender));
+            r.RegisterViewWithRegion("L", typeof(Receiver));
+
         }
 
         void SetTitle(TabView tab, string title)

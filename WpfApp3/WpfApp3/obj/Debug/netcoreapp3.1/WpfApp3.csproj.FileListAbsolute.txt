@@ -56,3 +56,7 @@ E:\Prism-\WpfApp3\WpfApp3\obj\Debug\netcoreapp3.1\WpfApp3.pdb
 E:\Prism-\WpfApp3\WpfApp3\obj\Debug\netcoreapp3.1\WpfApp3.genruntimeconfig.cache
 E:\Prism-\WpfApp3\WpfApp3\bin\Debug\netcoreapp3.1\Core.dll
 E:\Prism-\WpfApp3\WpfApp3\bin\Debug\netcoreapp3.1\Core.pdb
+E:\Prism-\WpfApp3\WpfApp3\bin\Debug\netcoreapp3.1\L.dll
+E:\Prism-\WpfApp3\WpfApp3\bin\Debug\netcoreapp3.1\P.dll
+E:\Prism-\WpfApp3\WpfApp3\bin\Debug\netcoreapp3.1\L.pdb
+E:\Prism-\WpfApp3\WpfApp3\bin\Debug\netcoreapp3.1\P.pdb

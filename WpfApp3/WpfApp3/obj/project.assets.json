@@ -199,11 +199,47 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
+      "L/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Core": "1.0.0",
+          "Prism.Wpf": "8.0.0.1909"
+        },
+        "compile": {
+          "bin/placeholder/L.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/L.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "P/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Core": "1.0.0",
+          "Prism.Wpf": "8.0.0.1909"
+        },
+        "compile": {
+          "bin/placeholder/P.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/P.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "WpfControlLibrary1/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Core": "1.0.0",
+          "L": "1.0.0",
+          "P": "1.0.0",
           "Prism.Wpf": "8.0.0.1909"
         },
         "compile": {
@@ -905,6 +941,16 @@
       "path": "../Core/Core.csproj",
       "msbuildProject": "../Core/Core.csproj"
     },
+    "L/1.0.0": {
+      "type": "project",
+      "path": "../L/L.csproj",
+      "msbuildProject": "../L/L.csproj"
+    },
+    "P/1.0.0": {
+      "type": "project",
+      "path": "../P/P.csproj",
+      "msbuildProject": "../P/P.csproj"
+    },
     "WpfControlLibrary1/1.0.0": {
       "type": "project",
       "path": "../WpfControlLibrary1/WpfControlLibrary1.csproj",
@@ -914,6 +960,8 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Core >= 1.0.0",
+      "L >= 1.0.0",
+      "P >= 1.0.0",
       "Prism.DryIoc >= 8.0.0.1909",
       "WpfControlLibrary1 >= 1.0.0"
     ]
@@ -954,6 +1002,12 @@
           "projectReferences": {
             "E:\\Prism-\\WpfApp3\\Core\\Core.csproj": {
               "projectPath": "E:\\Prism-\\WpfApp3\\Core\\Core.csproj"
+            },
+            "E:\\Prism-\\WpfApp3\\L\\L.csproj": {
+              "projectPath": "E:\\Prism-\\WpfApp3\\L\\L.csproj"
+            },
+            "E:\\Prism-\\WpfApp3\\P\\P.csproj": {
+              "projectPath": "E:\\Prism-\\WpfApp3\\P\\P.csproj"
             },
             "E:\\Prism-\\WpfApp3\\WpfControlLibrary1\\WpfControlLibrary1.csproj": {
               "projectPath": "E:\\Prism-\\WpfApp3\\WpfControlLibrary1\\WpfControlLibrary1.csproj"

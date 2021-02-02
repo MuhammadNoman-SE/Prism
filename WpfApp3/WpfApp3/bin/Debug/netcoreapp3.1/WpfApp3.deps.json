@@ -9,6 +9,8 @@
       "WpfApp3/1.0.0": {
         "dependencies": {
           "Core": "1.0.0",
+          "L": "1.0.0",
+          "P": "1.0.0",
           "Prism.DryIoc": "8.0.0.1909",
           "WpfControlLibrary1": "1.0.0"
         },
@@ -137,9 +139,29 @@
           "Core.dll": {}
         }
       },
+      "L/1.0.0": {
+        "dependencies": {
+          "Core": "1.0.0",
+          "Prism.Wpf": "8.0.0.1909"
+        },
+        "runtime": {
+          "L.dll": {}
+        }
+      },
+      "P/1.0.0": {
+        "dependencies": {
+          "Core": "1.0.0",
+          "Prism.Wpf": "8.0.0.1909"
+        },
+        "runtime": {
+          "P.dll": {}
+        }
+      },
       "WpfControlLibrary1/1.0.0": {
         "dependencies": {
           "Core": "1.0.0",
+          "L": "1.0.0",
+          "P": "1.0.0",
           "Prism.Wpf": "8.0.0.1909"
         },
         "runtime": {
@@ -260,6 +282,16 @@
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
     "Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "L/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "P/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
