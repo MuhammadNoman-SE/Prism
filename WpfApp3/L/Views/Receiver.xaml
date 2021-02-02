@@ -4,6 +4,11 @@
              xmlns:prism="http://prismlibrary.com/"             
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid>
-        <ListBox ItemsSource="{Binding M}"/>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <CheckBox Content="Show" IsChecked="{Binding Show}"/>
+        <ListBox Grid.Row="1" ItemsSource="{Binding M}"/>
     </Grid>
 </UserControl>

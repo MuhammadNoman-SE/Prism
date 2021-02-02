@@ -6,4 +6,3 @@ E:\Prism-\WpfApp3\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
 E:\Prism-\WpfApp3\Core\obj\Debug\netcoreapp3.1\Core.csproj.CoreCompileInputs.cache
 E:\Prism-\WpfApp3\Core\obj\Debug\netcoreapp3.1\Core.dll
 E:\Prism-\WpfApp3\Core\obj\Debug\netcoreapp3.1\Core.pdb
-E:\Prism-\WpfApp3\Core\obj\Debug\netcoreapp3.1\Core.csprojAssemblyReference.cache
