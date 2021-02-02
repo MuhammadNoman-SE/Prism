@@ -31,7 +31,9 @@ namespace WpfControlLibrary1.ViewModels
         public ViewAViewModel()
         {
             p = "pt";
-            Click = new DelegateCommand(c,cc).ObservesProperty(()=>i);
+            Click = new DelegateCommand(c)//, cc)
+                .ObservesCanExecute(()=>i);
+                //.ObservesProperty(()=>i);
         }
 
         public void c() {
