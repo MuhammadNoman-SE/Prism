@@ -22,8 +22,8 @@ namespace WpfControlLibrary1.ViewModels
         public bool i
         {
             get { return ii; }
-            set { ii = value;
-                Click.RaiseCanExecuteChanged();
+            set { SetProperty(ref ii , value);
+                //Click.RaiseCanExecuteChanged();
 
             }
         }
@@ -31,7 +31,7 @@ namespace WpfControlLibrary1.ViewModels
         public ViewAViewModel()
         {
             p = "pt";
-            Click = new DelegateCommand(c,cc);
+            Click = new DelegateCommand(c,cc).ObservesProperty(()=>i);
         }
 
         public void c() {
