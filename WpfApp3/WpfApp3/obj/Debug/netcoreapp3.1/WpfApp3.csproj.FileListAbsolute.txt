@@ -54,3 +54,5 @@ E:\Prism-\WpfApp3\WpfApp3\obj\Debug\netcoreapp3.1\WpfApp3.csproj.CopyComplete
 E:\Prism-\WpfApp3\WpfApp3\obj\Debug\netcoreapp3.1\WpfApp3.dll
 E:\Prism-\WpfApp3\WpfApp3\obj\Debug\netcoreapp3.1\WpfApp3.pdb
 E:\Prism-\WpfApp3\WpfApp3\obj\Debug\netcoreapp3.1\WpfApp3.genruntimeconfig.cache
+E:\Prism-\WpfApp3\WpfApp3\bin\Debug\netcoreapp3.1\Core.dll
+E:\Prism-\WpfApp3\WpfApp3\bin\Debug\netcoreapp3.1\Core.pdb

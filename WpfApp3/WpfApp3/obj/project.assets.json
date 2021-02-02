@@ -183,10 +183,27 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Prism.Wpf": "8.0.0.1909"
+        },
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "WpfControlLibrary1/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "Core": "1.0.0",
           "Prism.Wpf": "8.0.0.1909"
         },
         "compile": {
@@ -883,6 +900,11 @@
         "system.threading.tasks.nuspec"
       ]
     },
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
+    },
     "WpfControlLibrary1/1.0.0": {
       "type": "project",
       "path": "../WpfControlLibrary1/WpfControlLibrary1.csproj",
@@ -891,6 +913,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Core >= 1.0.0",
       "Prism.DryIoc >= 8.0.0.1909",
       "WpfControlLibrary1 >= 1.0.0"
     ]
@@ -929,6 +952,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
+            "E:\\Prism-\\WpfApp3\\Core\\Core.csproj": {
+              "projectPath": "E:\\Prism-\\WpfApp3\\Core\\Core.csproj"
+            },
             "E:\\Prism-\\WpfApp3\\WpfControlLibrary1\\WpfControlLibrary1.csproj": {
               "projectPath": "E:\\Prism-\\WpfApp3\\WpfControlLibrary1\\WpfControlLibrary1.csproj"
             }

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "WpfControlLibrary1/1.0.0": {
         "dependencies": {
+          "Core": "1.0.0",
           "Prism.Wpf": "8.0.0.1909"
         },
         "runtime": {
@@ -41,6 +42,14 @@
             "fileVersion": "8.0.0.1909"
           }
         }
+      },
+      "Core/1.0.0": {
+        "dependencies": {
+          "Prism.Wpf": "8.0.0.1909"
+        },
+        "runtime": {
+          "Core.dll": {}
+        }
       }
     }
   },
@@ -70,6 +79,11 @@
       "sha512": "sha512-RAIMvKo/CMcyHqFKXuHk4sU3HpdZgzf3xh885VJQ3HzgY5g4NtRdZalvQr87tmJ8ptMY/e5PSZhiJ9RTcuXPpQ==",
       "path": "prism.wpf/8.0.0.1909",
       "hashPath": "prism.wpf.8.0.0.1909.nupkg.sha512"
+    },
+    "Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

@@ -1,4 +1,5 @@
-﻿using Prism.Commands;
+﻿using Core;
+using Prism.Commands;
 using Prism.Mvvm;
 using System;
 
@@ -29,9 +30,10 @@ namespace WpfControlLibrary1.ViewModels
 
         public DelegateCommand UpdateCommand { get; private set; }
 
-        public TabViewModel()
+        public TabViewModel(IAppCommands ac)
         {
             UpdateCommand = new DelegateCommand(Update).ObservesCanExecute(() => CanUpdate);
+            ac.SaveAllCommand.RegisterCommand(UpdateCommand);
         }
 
         private void Update()

@@ -30,3 +30,6 @@ E:\Prism-\WpfApp3\WpfControlLibrary1\obj\Debug\netcoreapp3.1\WpfControlLibrary1.
 E:\Prism-\WpfApp3\WpfControlLibrary1\obj\Debug\netcoreapp3.1\WpfControlLibrary1.pdb
 E:\Prism-\WpfApp3\WpfControlLibrary1\obj\Debug\netcoreapp3.1\Views\TabView.baml
 E:\Prism-\WpfApp3\WpfControlLibrary1\obj\Debug\netcoreapp3.1\Views\TabView.g.cs
+E:\Prism-\WpfApp3\WpfControlLibrary1\bin\Debug\netcoreapp3.1\Core.dll
+E:\Prism-\WpfApp3\WpfControlLibrary1\bin\Debug\netcoreapp3.1\Core.pdb
+E:\Prism-\WpfApp3\WpfControlLibrary1\obj\Debug\netcoreapp3.1\WpfControlLibrary1.csproj.CopyComplete

@@ -1,4 +1,5 @@
-﻿using Prism.DryIoc;
+﻿using Core;
+using Prism.DryIoc;
 using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Mvvm;
@@ -26,6 +27,7 @@ namespace WpfApp3
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            containerRegistry.RegisterSingleton<IAppCommands, AppCommands>();
         }
 
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
