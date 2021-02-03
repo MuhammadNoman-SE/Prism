@@ -42,8 +42,8 @@
                 <ColumnDefinition />
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button Command="{Binding NC}" CommandParameter="Sender" Content="A" />
-                <Button Content="B" Command="{Binding NC}" CommandParameter="Receiver" Grid.Column="1"/>
+            <Button Command="{Binding NC}" CommandParameter="Sender" Content="Send Message" />
+                <Button Content="Receive Message" Command="{Binding NC}" CommandParameter="Receiver" Grid.Column="1"/>
     </Grid>
     </StackPanel>
         <StackPanel Grid.Row="1">

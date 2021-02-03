@@ -1,6 +1,7 @@
 ﻿using Prism.Commands;
 using Prism.Events;
 using Prism.Mvvm;
+using Prism.Regions;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -9,7 +10,7 @@ using WpfApp3.Core.Evenets;
 
 namespace L.ViewModels
 {
-    public class ReceiverViewModel : BindableBase
+    public class ReceiverViewModel : BindableBase,INavigationAware
     {
         private ObservableCollection<string> m= new ObservableCollection<string>();
 
@@ -41,6 +42,37 @@ namespace L.ViewModels
                 st= ea.Subscribe(s);
             else
                 ea.Unsubscribe(st);
+        }
+
+        public void OnNavigatedTo(NavigationContext navigationContext)
+        {
+            C += 1;
+        }
+
+        public bool IsNavigationTarget(NavigationContext navigationContext)
+        {
+            return true;
+        }
+
+        public void OnNavigatedFrom(NavigationContext navigationContext)
+        {
+        }
+
+        private int c=0;
+
+        public int C
+        {
+            get { return c; }
+            set { SetProperty(ref c , value);
+                Count = c.ToString();
+            }
+        }
+        private string count= "0";
+
+        public string Count
+        {
+            get { return count; }
+            set { SetProperty(ref count, value); }
         }
     }
 }

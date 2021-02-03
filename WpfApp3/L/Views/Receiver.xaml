@@ -7,8 +7,17 @@
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
-        <CheckBox Content="Show" IsChecked="{Binding Show}"/>
-        <ListBox Grid.Row="1" ItemsSource="{Binding M}"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Visited times: "/>
+            <TextBlock Text="{Binding Count}" Grid.Column="1"/>
+        </Grid>
+        <CheckBox Grid.Row="1" Content="Continue Communication?" IsChecked="{Binding Show}"/>
+        <ListBox Grid.Row="2" ItemsSource="{Binding M}"/>
     </Grid>
 </UserControl>
