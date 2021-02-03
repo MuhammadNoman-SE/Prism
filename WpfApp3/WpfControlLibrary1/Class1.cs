@@ -68,6 +68,8 @@ namespace WpfControlLibrary1
 
             c.RegisterForNavigation<Sender>();
             c.RegisterForNavigation<Receiver>();
+            c.RegisterForNavigation<PersonDetail>();
+
         }
 
     }

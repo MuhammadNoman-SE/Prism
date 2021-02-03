@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2e1fatvm3KN8SrSdKxeu/OcXLG0E6WJ5E7yDeOcAkvyEzMcnWkfZxrRARtp1GU4/YEHALUpgvtPIRMQ8IFEvWQ==",
+  "dgSpecHash": "0VcL1O0MYj//yA4UxldgsTuZw1gWagUK+Jc5YQmJd3ayqgOYTlnxE4Juf/RZmNRtCULHDLy5v/m2bbwkuSe3qA==",
   "success": true,
   "projectFilePath": "E:\\Prism-\\WpfApp3\\L\\L.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Muhammad.Noman\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.19\\microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512",
+    "C:\\Users\\Muhammad.Noman\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.31\\microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512",
     "C:\\Users\\Muhammad.Noman\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512",
     "C:\\Users\\Muhammad.Noman\\.nuget\\packages\\prism.wpf\\8.0.0.1909\\prism.wpf.8.0.0.1909.nupkg.sha512"
   ],

@@ -1,4 +1,5 @@
-﻿using Prism.Commands;
+﻿using Core.Business;
+using Prism.Commands;
 using Prism.Events;
 using Prism.Mvvm;
 using Prism.Regions;
@@ -12,9 +13,10 @@ namespace L.ViewModels
 {
     public class ReceiverViewModel : BindableBase,INavigationAware
     {
-        private ObservableCollection<string> m= new ObservableCollection<string>();
+        private ObservableCollection<Person> m= new ObservableCollection<Person>();
+        private IRegionManager r;
 
-        public ObservableCollection<string> M
+        public ObservableCollection<Person> People
         {
             get { return m; }
             set {SetProperty(ref m , value); ea.Subscribe(s); }
@@ -27,14 +29,27 @@ namespace L.ViewModels
             set { SetProperty(ref show , value); hs(show); }
         }
         public WpfApp3.Core.Evenets.Events ea;
-        public ReceiverViewModel(IEventAggregator  e)
+        public ReceiverViewModel(IEventAggregator  e,IRegionManager rm)
         {
             ea = e.GetEvent<Events>();//.Subscribe(s,ThreadOption.PublisherThread,false,p=>p.Contains("Nomi")
                                       //);
             hs(true);
+            PersonSelectedCommand = new DelegateCommand<Person>(PersonSelected);
+            r = rm;
         }
-        public void s(string ms) {
-            M.Add(ms);
+        public DelegateCommand<Person> PersonSelectedCommand { get; private set; }
+
+
+        private void PersonSelected(Person person)
+        {
+            if (null == person)
+                return;
+            var p = new NavigationParameters();
+            p.Add("person",person);
+            r.RequestNavigate("PersonDetailsRegion", "PersonDetail",p);
+        }
+        public void s(Person ms) {
+            People.Add(ms);
         }
         SubscriptionToken st;
         public void hs(bool isshow) {

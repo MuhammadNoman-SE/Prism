@@ -1,4 +1,5 @@
-﻿using Prism.Commands;
+﻿using Core.Business;
+using Prism.Commands;
 using Prism.Events;
 using Prism.Mvvm;
 using Prism.Regions;
@@ -22,13 +23,48 @@ namespace P.ViewModels
             get { return e; }
             set { e = value; }
         }
-        private string m;
+        private string fn;
 
-        public string M
+        public string FirstName
         {
-            get { return m; }
-            set {SetProperty(ref m , value); }
+            get { return fn; }
+            set {
+                SetProperty(ref fn , value);
+                Person.FirstName = fn;
+            }
         }
+
+        private string ln;
+
+        public string LastName
+        {
+            get { return ln; }
+            set
+            {
+                SetProperty(ref ln, value);
+                Person.LastName = ln;
+            }
+        }
+        private int ag;
+
+        public int Age
+        {
+            get { return ag; }
+            set
+            {
+                SetProperty(ref ag, value);
+                Person.Age = ag;
+            }
+        }
+
+        private Person p = new Person("","",0);
+
+        public Person Person
+        {
+            get { return p; }
+            set {SetProperty(ref p , value); }
+        }
+
 
         public SenderViewModel(IEventAggregator e)
         {
@@ -36,7 +72,7 @@ namespace P.ViewModels
             E = e;
         }
         public void sm() {
-            E.GetEvent<Events>().Publish(M);
+            E.GetEvent<Events>().Publish(Person);
         }
 
         public void OnNavigatedTo(NavigationContext navigationContext)

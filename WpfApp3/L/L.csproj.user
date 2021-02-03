@@ -7,6 +7,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Views\PersonDetail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\Receiver.xaml">
       <SubType>Designer</SubType>
     </Page>

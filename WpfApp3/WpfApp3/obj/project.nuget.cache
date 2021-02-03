@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "EBJLqDPy2rtzE3bCsKNllr8ak9LtkLVErM96yy7n5JKOQWTh69aQBAJys0Z8yPLFWt/4EeCpqX+wFSZVQNAiAw==",
+  "dgSpecHash": "OPB2YT/4d9xaP5+4NKEFlU31ZURfStFdKvBnwKS5o3RnoO8mBS6hC8d+Z4dpJObZZzGt7kpXJBRuBqcRYxa79A==",
   "success": true,
   "projectFilePath": "E:\\Prism-\\WpfApp3\\WpfApp3\\WpfApp3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Muhammad.Noman\\.nuget\\packages\\dryioc.dll\\4.5.0\\dryioc.dll.4.5.0.nupkg.sha512",
     "C:\\Users\\Muhammad.Noman\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Muhammad.Noman\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
-    "C:\\Users\\Muhammad.Noman\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.19\\microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512",
+    "C:\\Users\\Muhammad.Noman\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.31\\microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512",
     "C:\\Users\\Muhammad.Noman\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512",
     "C:\\Users\\Muhammad.Noman\\.nuget\\packages\\prism.dryioc\\8.0.0.1909\\prism.dryioc.8.0.0.1909.nupkg.sha512",
     "C:\\Users\\Muhammad.Noman\\.nuget\\packages\\prism.wpf\\8.0.0.1909\\prism.wpf.8.0.0.1909.nupkg.sha512",

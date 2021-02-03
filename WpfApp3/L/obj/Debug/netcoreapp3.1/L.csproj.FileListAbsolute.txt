@@ -14,3 +14,5 @@ E:\Prism-\WpfApp3\L\bin\Debug\netcoreapp3.1\Core.dll
 E:\Prism-\WpfApp3\L\bin\Debug\netcoreapp3.1\Core.pdb
 E:\Prism-\WpfApp3\L\obj\Debug\netcoreapp3.1\L.csprojAssemblyReference.cache
 E:\Prism-\WpfApp3\L\obj\Debug\netcoreapp3.1\L.csproj.CopyComplete
+E:\Prism-\WpfApp3\L\obj\Debug\netcoreapp3.1\Views\PersonDetail.baml
+E:\Prism-\WpfApp3\L\obj\Debug\netcoreapp3.1\Views\PersonDetail.g.cs
