@@ -3,11 +3,13 @@ using Prism.Commands;
 using Prism.Events;
 using Prism.Mvvm;
 using Prism.Regions;
+using System;
+using System.Windows;
 using WpfApp3.Core.Evenets;
 
 namespace P.ViewModels
 {
-    public class SenderViewModel : BindableBase,INavigationAware
+    public class SenderViewModel : BindableBase,INavigationAware,IConfirmNavigationRequest
     {
         private DelegateCommand s;
 
@@ -87,6 +89,14 @@ namespace P.ViewModels
 
         public void OnNavigatedFrom(NavigationContext navigationContext)
         {
+        }
+
+        public void ConfirmNavigationRequest(NavigationContext navigationContext, Action<bool> continuationCallback)
+        {
+            bool result = false;
+            if(MessageBoxResult.Yes==MessageBox.Show("sHOW?", "Show?", MessageBoxButton.YesNoCancel))
+                result = true;
+            continuationCallback(result);
         }
 
         private int c=0;

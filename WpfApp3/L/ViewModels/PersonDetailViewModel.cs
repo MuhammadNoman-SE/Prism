@@ -26,7 +26,13 @@ namespace L.ViewModels
 
         public bool IsNavigationTarget(NavigationContext navigationContext)
         {
-            return true;
+            Person p = navigationContext.Parameters.GetValue<Person>("person");
+            if (p.FirstName.Equals(SelectedPerson.FirstName) &&
+                p.LastName.Equals(SelectedPerson.LastName) &&
+                p.Age.Equals(SelectedPerson.Age))
+                return true;
+            else
+                return false;
         }
 
         public void OnNavigatedFrom(NavigationContext navigationContext)

@@ -37,7 +37,7 @@ namespace L.ViewModels
             PersonSelectedCommand = new DelegateCommand<Person>(PersonSelected);
             r = rm;
         }
-        public DelegateCommand<Person> PersonSelectedCommand { get; private set; }
+        public DelegateCommand<Person> PersonSelectedCommand { get;  set; }
 
 
         private void PersonSelected(Person person)
