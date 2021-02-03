@@ -12,7 +12,7 @@ namespace P.ViewModels
     public class SenderViewModel : BindableBase,INavigationAware,IConfirmNavigationRequest
     {
         private DelegateCommand s;
-
+        private DelegateCommand GoForwardCommand;
         public DelegateCommand S
         {
             get { return s; }
@@ -72,14 +72,24 @@ namespace P.ViewModels
         {
             S = new DelegateCommand(sm);
             E = e;
+            GoForwardCommand = new DelegateCommand(gf,cgf);
         }
         public void sm() {
             E.GetEvent<Events>().Publish(Person);
         }
+        IRegionNavigationJournal j;
+        private void gf() {
+            j.GoForward();
+        }
+        private bool cgf() {
+            return null != j && j.CanGoForward;
 
+        }
         public void OnNavigatedTo(NavigationContext navigationContext)
         {
             C+=1;
+            j = navigationContext.NavigationService.Journal;
+            GoForwardCommand.RaiseCanExecuteChanged();
                 }
 
         public bool IsNavigationTarget(NavigationContext navigationContext)

@@ -30,6 +30,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="100"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
             <ListBox x:Name="listOfPeople" ItemsSource="{Binding People}">
@@ -40,6 +41,7 @@
                 </i:Interaction.Triggers>
             </ListBox>
             <TabControl Grid.Row="1" Margin="10" prism:RegionManager.RegionName="PersonDetailsRegion" />
+            <Button Grid.Row="2" Content="Go Back" Command="{Binding GoBackCommand}"/>
         </Grid>
         <!--ListBox Grid.Row="2" ItemsSource="{Binding M}"/-->
     </Grid>

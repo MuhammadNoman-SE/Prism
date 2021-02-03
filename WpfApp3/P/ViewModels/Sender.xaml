@@ -32,5 +32,6 @@
         </Grid>
         <Button Command="{Binding S}">Send Message
         </Button>
+        <Button Command="{Binding GoForwardCommand}" Content="Go Forward"/>
     </StackPanel>
 </UserControl>

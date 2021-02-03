@@ -36,10 +36,18 @@ namespace L.ViewModels
             hs(true);
             PersonSelectedCommand = new DelegateCommand<Person>(PersonSelected);
             r = rm;
+            GoBackCommand = new DelegateCommand(gb,cgb);
         }
         public DelegateCommand<Person> PersonSelectedCommand { get;  set; }
-
-
+        public DelegateCommand GoBackCommand { get; set; }
+        IRegionNavigationJournal j;
+        private void gb()
+        {
+            j.GoBack();
+        }
+        private bool cgb() {
+            return j != null && j.CanGoBack;
+        }
         private void PersonSelected(Person person)
         {
             if (null == person)
@@ -61,7 +69,9 @@ namespace L.ViewModels
 
         public void OnNavigatedTo(NavigationContext navigationContext)
         {
+            j = navigationContext.NavigationService.Journal;
             C += 1;
+            GoBackCommand.RaiseCanExecuteChanged();
         }
 
         public bool IsNavigationTarget(NavigationContext navigationContext)
