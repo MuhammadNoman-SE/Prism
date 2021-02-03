@@ -3,6 +3,7 @@ using Prism.Commands;
 using Prism.Events;
 using Prism.Mvvm;
 using Prism.Regions;
+using Prism.Services.Dialogs;
 using System;
 using System.Windows;
 using WpfApp3.Core.Evenets;
@@ -67,12 +68,13 @@ namespace P.ViewModels
             set {SetProperty(ref p , value); }
         }
 
-
-        public SenderViewModel(IEventAggregator e)
+        private IDialogService d;
+        public SenderViewModel(IEventAggregator e, IDialogService ds)
         {
             S = new DelegateCommand(sm);
             E = e;
             GoForwardCommand = new DelegateCommand(gf,cgf);
+            d = ds;
         }
         public void sm() {
             E.GetEvent<Events>().Publish(Person);
@@ -104,8 +106,10 @@ namespace P.ViewModels
         public void ConfirmNavigationRequest(NavigationContext navigationContext, Action<bool> continuationCallback)
         {
             bool result = false;
-            if(MessageBoxResult.Yes==MessageBox.Show("sHOW?", "Show?", MessageBoxButton.YesNoCancel))
-                result = true;
+            Core.DialogService.ShowDialog(d,"Show?",res=> { 
+            if(res.Result==ButtonResult.OK)
+                result = true; 
+            });
             continuationCallback(result);
         }
 

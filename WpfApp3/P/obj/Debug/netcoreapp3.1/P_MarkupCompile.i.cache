@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 
-1-958823587
+2812846686
 
-4-1301474739
+6-1487704443
 196-1608790630
-ViewModels\Sender.xaml;
+Views\Dialog.xaml;Views\Sender.xaml;
 
 False
 

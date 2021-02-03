@@ -1,4 +1,5 @@
 ﻿using L.Views;
+using P.ViewModels;
 using P.Views;
 using Prism.Ioc;
 using Prism.Modularity;
@@ -65,7 +66,7 @@ namespace WpfControlLibrary1
             ViewModelLocationProvider.Register<ControlA>(() => {
                 return new ControlAViewModel() { C = "fac" };
             });
-
+            c.RegisterDialog<Dialog, DialogViewModel>();
             c.RegisterForNavigation<Sender>();
             c.RegisterForNavigation<Receiver>();
             c.RegisterForNavigation<PersonDetail>();
