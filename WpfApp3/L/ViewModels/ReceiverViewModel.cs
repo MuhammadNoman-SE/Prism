@@ -35,12 +35,12 @@ namespace L.ViewModels
         public void s(string ms) {
             M.Add(ms);
         }
-
+        SubscriptionToken st;
         public void hs(bool isshow) {
             if (isshow)
-                ea.Subscribe(s);
+                st= ea.Subscribe(s);
             else
-                ea.Unsubscribe(s);
+                ea.Unsubscribe(st);
         }
     }
 }

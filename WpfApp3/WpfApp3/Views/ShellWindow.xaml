@@ -29,12 +29,33 @@
         </StackPanel>
     </Grid-->
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <ContentControl prism:RegionManager.RegionName="P"/>
-        <ContentControl Grid.Column="1" prism:RegionManager.RegionName="S"/>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
 
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Command="{Binding NC}" CommandParameter="Sender" Content="A" />
+                <Button Content="B" Command="{Binding NC}" CommandParameter="Receiver" Grid.Column="1"/>
+    </Grid>
+    </StackPanel>
+        <StackPanel Grid.Row="1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <ContentControl prism:RegionManager.RegionName="P"/>
+                <ContentControl Grid.Column="1" prism:RegionManager.RegionName="S"/>
+            </Grid>
+        </StackPanel>
+        <ContentControl Grid.Row="2" prism:RegionManager.RegionName="C"/>
     </Grid>
 </Window>

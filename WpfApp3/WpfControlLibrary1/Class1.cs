@@ -51,8 +51,8 @@ namespace WpfControlLibrary1
 
             //r.AddToRegion("P",s );
             //r.AddToRegion("S", rr);
-            r.RegisterViewWithRegion("P", typeof(Sender));
-            r.RegisterViewWithRegion("S", typeof(Receiver));
+            //r.RegisterViewWithRegion("P", typeof(Sender));
+            //r.RegisterViewWithRegion("S", typeof(Receiver));
 
         }
 
@@ -65,6 +65,9 @@ namespace WpfControlLibrary1
             ViewModelLocationProvider.Register<ControlA>(() => {
                 return new ControlAViewModel() { C = "fac" };
             });
+
+            c.RegisterForNavigation<Sender>();
+            c.RegisterForNavigation<Receiver>();
         }
 
     }
