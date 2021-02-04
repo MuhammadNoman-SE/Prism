@@ -58,7 +58,7 @@ namespace P.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/P;component/views/dialog.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/P;V1.0.0.0;component/views/dialog.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\Dialog.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

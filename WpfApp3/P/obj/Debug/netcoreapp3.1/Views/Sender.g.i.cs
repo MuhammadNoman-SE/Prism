@@ -58,7 +58,7 @@ namespace P.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/P;component/views/sender.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/P;V1.0.0.0;component/views/sender.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\Sender.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
